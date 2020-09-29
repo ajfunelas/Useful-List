@@ -15,3 +15,4 @@ function textToClipboard (text) {
     document.body.removeChild(dummy);
 }
 ```
+[Timelapse Render Lumix](https://www.fourthirds-user.com/forum/forum/equipment/panasonic-lumix-cameras/15003-lumix-g7-time-lapse-after-the-fact?14542-Lumix-G7-Time-Lapse-after-the-fact=)
