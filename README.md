@@ -18,3 +18,17 @@ function textToClipboard (text) {
 [Timelapse Render Lumix](https://www.fourthirds-user.com/forum/forum/equipment/panasonic-lumix-cameras/15003-lumix-g7-time-lapse-after-the-fact?14542-Lumix-G7-Time-Lapse-after-the-fact=)
 
 [PostgreSQL audit logging using triggers](https://vladmihalcea.com/postgresql-audit-logging-triggers/)
+
+For Users: >
+
+```go
+		for i := 0; i < 5; i++ {
+			u := store.UserFactory()
+			u.RoleID = member.ID
+			err := u.Insert(conn, boil.Infer())
+			if err != nil {
+				return fmt.Errorf("%w", err)
+			}
+		}
+
+```
