@@ -39,3 +39,5 @@ For Users: >
 [Simple Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
 
 [Jamie's Shadow Realm](https://xd.adobe.com/view/6e25d7ab-d974-4387-980f-360f3962759c-3b76/specs/)
+
+[How to get changes from another branch](https://stackoverflow.com/questions/37709298/how-to-get-changes-from-another-branch)
