@@ -43,3 +43,5 @@ For Users: >
 [How to get changes from another branch](https://stackoverflow.com/questions/37709298/how-to-get-changes-from-another-branch)
 
 [CLI Migration](https://github.com/golang-migrate/migrate/blob/master/GETTING_STARTED.md)
+
+[RPG Like Map](https://www.youtube.com/watch?v=T1masuI3g8Q)
