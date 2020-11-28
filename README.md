@@ -45,3 +45,5 @@ For Users: >
 [CLI Migration](https://github.com/golang-migrate/migrate/blob/master/GETTING_STARTED.md)
 
 [RPG Like Map](https://www.youtube.com/watch?v=T1masuI3g8Q)
+
+[Agawan base mechanics](https://askinglot.com/what-is-the-mechanics-of-agawan-base)
