@@ -53,3 +53,5 @@ For Users: >
 [Public & Private Routes](https://medium.com/@thanhbinh.tran93/private-route-public-route-and-restricted-route-with-react-router-d50b27c15f5e)
 
 [React State Management](https://medium.com/@thanhbinh.tran93/react-state-management-fb857a2432cf)
+
+[Read later cuz you're to sleepy](https://medium.com/@gemisis/developing-for-vr-in-2020-a-beginners-guide-bde4bc2611fc)
