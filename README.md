@@ -54,4 +54,6 @@ For Users: >
 
 [React State Management](https://medium.com/@thanhbinh.tran93/react-state-management-fb857a2432cf)
 
-[Read later cuz you're to sleepy](https://medium.com/@gemisis/developing-for-vr-in-2020-a-beginners-guide-bde4bc2611fc)
+[Read later cuz you're too sleepy](https://medium.com/@gemisis/developing-for-vr-in-2020-a-beginners-guide-bde4bc2611fc)
+
+[Breathing Animation](https://codepen.io/machi/pen/YymGzP?editors=1100)
