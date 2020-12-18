@@ -63,3 +63,5 @@ For Users: >
 [Japan Train Chimes & Jingles](https://www.youtube.com/watch?v=UOJNh4_YSOw)
 
 [React Hook Animations](https://www.youtube.com/watch?v=0q8htcovGUQ&ab_channel=LogRocket)
+
+[Webpack-Bundle-Analyzer to check library file size](npmjs.com/package/webpack-bundle-analyzer)
