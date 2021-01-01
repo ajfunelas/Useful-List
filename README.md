@@ -65,3 +65,5 @@ For Users: >
 [React Hook Animations](https://www.youtube.com/watch?v=0q8htcovGUQ&ab_channel=LogRocket)
 
 [Webpack-Bundle-Analyzer to check library file size](npmjs.com/package/webpack-bundle-analyzer)
+
+[Proper Flutter Installation](https://www.youtube.com/watch?v=T9LdScRVhv8)
