@@ -67,3 +67,5 @@ For Users: >
 [Webpack-Bundle-Analyzer to check library file size](npmjs.com/package/webpack-bundle-analyzer)
 
 [Proper Flutter Installation](https://www.youtube.com/watch?v=T9LdScRVhv8)
+
+[Go env setup windows & mac](https://www.youtube.com/watch?v=dgIh-VYcWYw)
