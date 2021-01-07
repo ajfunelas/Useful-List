@@ -69,3 +69,5 @@ For Users: >
 [Proper Flutter Installation](https://www.youtube.com/watch?v=T9LdScRVhv8)
 
 [Go env setup windows & mac](https://www.youtube.com/watch?v=dgIh-VYcWYw)
+
+[Material UI loading examples](http://react-material.fusetheme.com/documentation/material-ui-components/progress)
