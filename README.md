@@ -73,3 +73,5 @@ For Users: >
 [Material UI loading examples](http://react-material.fusetheme.com/documentation/material-ui-components/progress)
 
 [Firebase File Upload](https://dev.to/itnext/how-to-do-image-upload-with-firebase-in-react-cpj)
+
+[Problem Solving](https://interestingengineering.com/how-to-think-like-a-programmer-when-problem-solving)
