@@ -75,3 +75,5 @@ For Users: >
 [Firebase File Upload](https://dev.to/itnext/how-to-do-image-upload-with-firebase-in-react-cpj)
 
 [Problem Solving](https://interestingengineering.com/how-to-think-like-a-programmer-when-problem-solving)
+
+[SQL Game](https://mystery.knightlab.com/walkthrough.html)
