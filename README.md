@@ -77,3 +77,14 @@ For Users: >
 [Problem Solving](https://interestingengineering.com/how-to-think-like-a-programmer-when-problem-solving)
 
 [SQL Game](https://mystery.knightlab.com/walkthrough.html)
+
+```bash
+
+cd .ssh
+ssh-keygen -f github
+cat github.pub
+nano config
+Host github.com
+  IdentityFile ~/.ssh/github
+
+```
