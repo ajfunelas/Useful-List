@@ -99,3 +99,13 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
+
+Keychron V2 fn keys fix for linux/ubuntu:
+What I would try and do is change the fnmode variable on your system from the boolean 1 to 0. You should be able to do this by piping an echo 0 command to tee on the file itself:
+```bash
+echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
+```
+If that doesn't work, remember to set it back to 1 for consistency's sake:
+```bash
+echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
+```
