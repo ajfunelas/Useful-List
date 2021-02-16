@@ -109,3 +109,5 @@ If that doesn't work, remember to set it back to 1 for consistency's sake:
 ```bash
 echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
 ```
+
+[Stripe Payment Integration](https://stripe.com/docs/checkout/integration-builder)
