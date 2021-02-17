@@ -111,3 +111,61 @@ echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
 ```
 
 [Stripe Payment Integration](https://stripe.com/docs/checkout/integration-builder)
+
+```go
+type CheckoutSessionRequest struct {
+	Params struct {
+		SuccessURL string `json:"successURL"`
+		CancelURL  string `json:"cancelURL"`
+	} `json:"params"`
+	Payload struct {
+	} `json:"payload"`
+}
+
+// CheckoutSession generates a checkout session and return its ID
+func (c *StripeController) CheckoutSession(w http.ResponseWriter, r *http.Request, u *db.User) (int, error) {
+	req := &CheckoutSessionRequest{}
+	err := json.NewDecoder(r.Body).Decode(req)
+	if err != nil {
+		return http.StatusBadRequest, terror.New(err, "invalid input")
+	}
+	defer r.Body.Close()
+
+	_, err = c.CreateStripeCustomer(w, r, u)
+	if err != nil {
+		return http.StatusInternalServerError, terror.New(err, "failed to create new stripe customer")
+	}
+
+	// productID := "insert productID"
+	priceID := "insert priceID"
+
+	// Get Checkout Session
+	params := &stripe.CheckoutSessionParams{
+		Customer: &u.StripeCustomerID.String,
+		// SuccessURL: stripe.String("https://example.com/success"),
+		// CancelURL:  stripe.String("https://example.com/cancel"),
+		CancelURL:  &req.Params.CancelURL,
+		SuccessURL: &req.Params.SuccessURL,
+		PaymentMethodTypes: stripe.StringSlice([]string{
+			"card",
+		}),
+		LineItems: []*stripe.CheckoutSessionLineItemParams{
+			{
+				Price:    stripe.String(priceID),
+				Quantity: stripe.Int64(1),
+			},
+		},
+		Mode: stripe.String(string(stripe.CheckoutSessionModeSubscription)),
+	}
+
+	fmt.Println(params)
+
+	session, err := c.stripeClient.CheckoutSessions.New(params)
+	if err != nil {
+		return http.StatusInternalServerError, terror.New(err, "failed to get billing portal")
+	}
+
+	return helpers.EncodeJSON(w, session.ID)
+}
+```
+
