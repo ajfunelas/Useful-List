@@ -171,3 +171,75 @@ func (c *StripeController) CheckoutSession(w http.ResponseWriter, r *http.Reques
 
 [Favicon generator for react projects](https://favicomatic.com/)
 
+
+```go
+func (c *OpportunityController) SendEmailNotification(w http.ResponseWriter, r *http.Request, u *db.User) (int, error) {
+	id := chi.URLParam(r, "id")
+	_, err := uuid.FromString(id)
+	if err != nil {
+		return http.StatusInternalServerError, terror.New(err, "")
+	}
+
+	selectedProposals, err := db.Proposals(
+		db.ProposalWhere.OpportunityID.EQ(id),
+		db.ProposalWhere.IsSelected.EQ(true),
+		qm.Load(
+			db.ProposalRels.Poster,
+		),
+		qm.Load(
+			qm.Rels(
+				db.ProposalRels.Opportunity,
+				db.OpportunityRels.Business,
+				db.BusinessRels.Owner,
+			),
+		),
+	).All(c.Conn)
+	if err != nil {
+		return http.StatusInternalServerError, terror.New(err, "")
+	}
+	fmt.Println("hit hello")
+
+	for _, sp := range selectedProposals {
+
+		businessName := sp.R.Opportunity.R.Business.Name
+
+		fmt.Println(businessName)
+
+		// Create email
+		subject := "Congratulations, " + businessName + " business want to chat"
+
+		name := "UserDetail"
+		if u.FirstName != "" {
+			name = u.FirstName
+		}
+		if u.LastName != "" {
+			name += " " + u.LastName
+		}
+
+		message := c.mailer.NewMessage(c.mailHost.Sender, subject, "", sp.R.Poster.Email)
+		message.SetTemplate("experlio_notification")
+
+		fmt.Println("hit hello")
+
+		message.AddVariable("name", sp.R.Poster.FirstName)
+
+		message.AddVariable("business", sp.R.Opportunity.R.Business.Name)
+		message.AddVariable("owner_name", sp.R.Opportunity.R.Business.R.Owner.FirstName)
+		message.AddVariable("owner_email", sp.R.Opportunity.R.Business.R.Owner.Email)
+
+		// Send Email
+		emailCtx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+		defer cancel()
+
+		_, _, err = c.mailer.Send(emailCtx, message)
+
+		if err != nil {
+			return http.StatusInternalServerError, terror.New(err, "fail to send email")
+		}
+
+	}
+
+	return helpers.EncodeJSON(w, true)
+}
+```
+
