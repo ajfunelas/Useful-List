@@ -169,3 +169,5 @@ func (c *StripeController) CheckoutSession(w http.ResponseWriter, r *http.Reques
 }
 ```
 
+[Favicon generator for react projects](https://favicomatic.com/)
+
