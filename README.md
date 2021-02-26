@@ -243,3 +243,6 @@ func (c *OpportunityController) SendEmailNotification(w http.ResponseWriter, r *
 }
 ```
 
+
+[Google Analytics React Setup](https://js.plainenglish.io/how-to-setup-and-add-google-analytics-to-your-react-app-fd361f47ac7b)
+
