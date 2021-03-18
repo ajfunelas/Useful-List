@@ -248,3 +248,5 @@ func (c *OpportunityController) SendEmailNotification(w http.ResponseWriter, r *
 
 [Disabling download on ReactPlayer](https://github.com/CookPete/react-player/issues/551)
 
+[Linode hosting](https://www.linode.com/pricing/)
+
