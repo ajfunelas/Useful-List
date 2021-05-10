@@ -276,3 +276,5 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 [Flutter Post Request](https://github.com/themaaz32/http_post_teach)
 
 [Flutter Rest](https://www.geeksforgeeks.org/implementing-rest-api-in-flutter/)
+
+[TestFlight Camera issue IOS deploy FIX](https://stackoverflow.com/questions/39519773/nsphotolibraryusagedescription-key-must-be-present-in-info-plist-to-use-camera-r)
