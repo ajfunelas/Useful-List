@@ -280,3 +280,5 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 [TestFlight Camera issue IOS deploy FIX](https://stackoverflow.com/questions/39519773/nsphotolibraryusagedescription-key-must-be-present-in-info-plist-to-use-camera-r)
 
 [Flutter-golang boilerplate](https://github.com/wzslr321/flutter_web_fullstack_boileplate)
+
+[^ same thang](https://blog.codefuture.dev/flutterdart-frontend-less-greatergolang-backend-api)
