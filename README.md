@@ -282,3 +282,5 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 [Flutter-golang boilerplate](https://github.com/wzslr321/flutter_web_fullstack_boileplate)
 
 [^ same thang](https://blog.codefuture.dev/flutterdart-frontend-less-greatergolang-backend-api)
+
+[Tool to get SVG logo of company brands](https://www.brandsoftheworld.com/)
