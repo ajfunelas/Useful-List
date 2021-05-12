@@ -284,3 +284,5 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 [^ same thang](https://blog.codefuture.dev/flutterdart-frontend-less-greatergolang-backend-api)
 
 [Tool to get SVG logo of company brands](https://www.brandsoftheworld.com/)
+
+[Flutter Provider Package](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
