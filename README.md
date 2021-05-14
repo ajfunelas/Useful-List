@@ -288,3 +288,7 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 [Flutter Provider Package](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
 
 [Flutter Version 5](https://www.youtube.com/watch?v=za9PwKgv58M)
+
+
+Problem : "ERROR ITMS-4241: “App is Removed or Deleted. Apps can't be validated or submitted while they're removed or deleted.” at SoftwareAssets"
+Solution : The bundle id of the app your are trying to upload does not match the bundle id to the one in App Store Connect. Either change your bundle id in xcode or create a new app in App Store Connect with the matching bundle id.
