@@ -292,3 +292,36 @@ particlesJS("particles-js", {"particles":{"number":{"value":47,"density":{"enabl
 
 Problem : "ERROR ITMS-4241: “App is Removed or Deleted. Apps can't be validated or submitted while they're removed or deleted.” at SoftwareAssets"
 Solution : The bundle id of the app your are trying to upload does not match the bundle id to the one in App Store Connect. Either change your bundle id in xcode or create a new app in App Store Connect with the matching bundle id.
+
+
+Promises:
+```js
+function Promise(constructor) {
+  var resolveFn, catchFn
+  this.then = function(callback) {
+      resolvefn = callback
+  }
+  this.catch = function(callback) {
+      catchfn = callback
+  }
+  
+  this.resolve = function() {
+    resolvefn()
+  }
+  this.reject = function() {
+    catchfn()
+  }
+  constructor(this.resolve, this.reject)
+}
+
+function testPromise() {
+  return new Promise(function(resolve, reject) {
+    console.log("this is the promise")
+    setTimeout(resolve, 1000);
+  })
+}
+
+testPromise().then(function() {
+  console.log('hello')
+})
+```
