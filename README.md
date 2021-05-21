@@ -325,3 +325,5 @@ testPromise().then(function() {
   console.log('hello')
 })
 ```
+
+[module file_picker not found fix](https://github.com/flutter/flutter/issues/43986)
