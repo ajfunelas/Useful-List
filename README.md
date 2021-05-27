@@ -327,3 +327,17 @@ testPromise().then(function() {
 ```
 
 [module file_picker not found fix](https://github.com/flutter/flutter/issues/43986)
+
+
+```bash
+Postgresql server side
+
+su postgres
+/root$ psql
+\l to list databases
+\c nameofproject - to connect
+\dt to list tables
+\dt nameoftable
+BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';ROLLBACK;
+BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
+```
