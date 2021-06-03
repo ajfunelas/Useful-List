@@ -343,3 +343,6 @@ BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
 ```
 
 [Installing Intellij](https://www.javahelps.com/2015/04/install-intellij-idea-on-ubuntu.html)
+
+[Create Alias](https://www.tecmint.com/create-alias-in-linux/)
+
