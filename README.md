@@ -346,3 +346,4 @@ BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
 
 [Create Alias](https://www.tecmint.com/create-alias-in-linux/)
 
+[converting NULL to string is unsupported](https://devtidbits.com/2020/08/03/go-sql-error-converting-null-to-string-is-unsupported/)
