@@ -355,3 +355,7 @@ BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
 [Utopia for react design and code](https://utopia.app/)
 
 [3DS Parental Control Bypass](https://mkey.salthax.org/)
+
+[3DS Custom Firmware](https://www.youtube.com/watch?v=m9jQvtZvCSg)
+
+[3DS CIAS](https://www.cia-3ds.com/)
