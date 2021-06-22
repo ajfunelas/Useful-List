@@ -353,3 +353,5 @@ BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
 [Get emails part 2](https://hunter.io/)
 
 [Utopia for react design and code](https://utopia.app/)
+
+[3DS Parental Control Bypass](https://mkey.salthax.org/)
