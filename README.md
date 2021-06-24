@@ -359,3 +359,5 @@ BEGIN; UPDATE tableName SET column = 'blah' Where column = 'blah';COMMIT;
 [3DS Custom Firmware](https://www.youtube.com/watch?v=m9jQvtZvCSg)
 
 [3DS CIAS](https://www.cia-3ds.com/)
+
+[mdBook](https://github.com/rust-lang/mdBook)
